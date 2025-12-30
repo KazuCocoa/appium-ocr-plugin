@@ -5,7 +5,7 @@ import path from 'path';
 import {ExternalDriver} from 'appium/build/lib/appium';
 
 const SETTINGS = {}
-const SCREEN_FIXTURE = path.resolve(__dirname, '..', '..', '..', '..', 'fixtures', 'screen.png')
+const SCREEN_FIXTURE = path.resolve(__dirname, '..', '..', '..', 'fixtures', 'screen.png')
 
 function getFakeDriver({settings = SETTINGS} = {}) {
     return {
