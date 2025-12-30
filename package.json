@@ -23,7 +23,8 @@
     "pluginName": "ocr",
     "mainClass": "AppiumOcrPlugin"
   },
-  "main": "./build/index.js",
+  "main": "./build/src/index.js",
+  "types": "./build/src/index.d.ts",
   "directories": {
     "src": "./src"
   },

@@ -111,12 +111,8 @@ export class AppiumOcrPlugin extends BasePlugin {
     }
 
     async readyWorker(driver: ExternalDriver) {
-        let lang = driver.settings.getSettings().ocrLanguage
-        let validChars = driver.settings.getSettings().ocrValidChars
-        lang = lang || DEFAULT_LANG
-        validChars = validChars || ''
-
-        // v6 initializes languages via createWorker; explicit load/initialize are no longer available
+        const lang = driver.settings.getSettings().ocrLanguage || DEFAULT_LANG
+        const validChars = driver.settings.getSettings().ocrValidChars || ''
         this.worker = await createWorker(
             lang,
             undefined,
