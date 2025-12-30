@@ -52,8 +52,8 @@
     "prepare": "npm run build",
     "build": "tsc",
     "watch": "tsc --watch",
-    "test:unit": "mocha ./build/src/test/unit/*-specs.js",
-    "test:e2e": "mocha -t 120000 ./build/src/test/e2e/*-specs.js"
+    "test:unit": "mocha ./build/test/unit/*-specs.js",
+    "test:e2e": "mocha -t 120000 ./build/test/e2e/*-specs.js"
   },
   "//devDependencies": {
     "@types/debug": "necessary because a subdep of wdio uses this package without typedefs so we have to import the typedefs ourself"
